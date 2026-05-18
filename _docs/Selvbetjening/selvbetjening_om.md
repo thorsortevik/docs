@@ -6,6 +6,9 @@ sidebar: main_sidebar
 product: Selvbetjening
 redirect_from: /selvbetjening_om
 ---
+* TOC
+{:toc}
+
 ## Om selvbetjening
 
 Selvbetjening gjør det mulig å administrere Digdirs fellesløsninger uten manuell behandling fra Digdir.
@@ -24,6 +27,7 @@ Per i dag kan du selvbetjene følgende fellesløsninger
 - ID-porten
 - Ansattporten
 - Maskinporten
+  - Kontakt- og reservasjonsregisteret bruker Maskinporten til autentisering.
 
 
 ## Grensesnitt for selvbetjening
@@ -65,12 +69,3 @@ Selvbetjening er tilgjengelig i både test- og produksjonsmiljø.
 | --- | --- |
 | Test | [selvbetjening.test.samarbeid.digdir.no](https://selvbetjening.test.samarbeid.digdir.no) |
 | PROD | [selvbetjening.samarbeid.digdir.no](https://selvbetjening.samarbeid.digdir.no) |
-
-
-## Forutsetninger
-
-For å ta i bruk selvbetjening må:
-
-virksomheten være registrert hos Digdir
-nødvendige bruksvilkår være signert
-brukeren ha nødvendige roller og tilganger

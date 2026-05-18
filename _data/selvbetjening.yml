@@ -1,0 +1,65 @@
+sidebarTitle: Selvbetjening
+
+folders:
+
+- title: Om selvbetjening
+  folderitems:
+
+      - title: Hva er selvbetjening?
+        jurl: /docs/selvbetjening/selvbetjening_om.html
+
+      - title: Tilgang
+        jurl: /docs/selvbetjening/selvbetjening_tilgang.html
+
+
+- title: Brukerveiledninger
+  folderitems:
+
+      - title: Opprette klient
+        jurl: /docs/selvbetjening/selvbetjening_opprette_klient.html
+
+      - title: Administrere klient
+        jurl: /docs/selvbetjening/selvbetjening_administrere_klient.html
+
+      - title: Administrere API og scopes
+        jurl: /docs/selvbetjening/selvbetjening_api.html
+
+
+- title: API
+  folderitems:
+
+      - title: Selvbetjenings-API
+        jurl: /docs/selvbetjening/selvbetjening_api_overordnet.html
+
+      - title: Autentisering
+        jurl: /docs/selvbetjening/selvbetjening_api_auth.html
+
+
+- title: Drift og feilsøking
+  folderitems:
+
+      - title: Vanlige problemer
+        jurl: /docs/selvbetjening/selvbetjening_feilsoking.html
+
+      - title: Miljøer
+        jurl: /docs/selvbetjening/selvbetjening_miljo.html
+
+
+###########################
+
+
+related_resources_title: Andre nyttige lenker
+
+related_resources_list:
+
+- title: Github
+  jurl: https://github.com/difi/felleslosninger
+
+- title: Samarbeidsportalen
+  jurl: https://samarbeid.digdir.no
+
+- title: Status og driftsmeldinger
+  jurl: https://status.digdir.no/
+
+- title: Digitaliseringsdirektoratet
+  jurl: https://www.digdir.no
