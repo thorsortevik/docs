@@ -6,23 +6,23 @@ folders:
   folderitems:
 
       - title: Hva er selvbetjening?
-        jurl: /selvbetjening/selvbetjening_om.html
+        jurl: /Selvbetjening/selvbetjening_om.html
 
       - title: Tilgang
-        jurl: /selvbetjening/selvbetjening_tilgang.html
+        jurl: /Selvbetjening/selvbetjening_tilgang.html
 
 
 - title: Brukerveiledninger
   folderitems:
 
       - title: Opprette klient
-        jurl: /selvbetjening/selvbetjening_opprette_klient.html
+        jurl: /Selvbetjening/selvbetjening_opprette_klient.html
 
       - title: Administrere klient
-        jurl: /selvbetjening/selvbetjening_administrere_klient.html
+        jurl: /Selvbetjening/selvbetjening_administrere_klient.html
 
       - title: Administrere API og scopes
-        jurl: /selvbetjening/selvbetjening_api.html
+        jurl: /Selvbetjening/selvbetjening_api.html
 
 
 - title: API
