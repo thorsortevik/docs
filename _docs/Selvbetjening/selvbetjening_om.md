@@ -6,35 +6,71 @@ sidebar: main_sidebar
 product: Selvbetjening
 redirect_from: /selvbetjening_om
 ---
+## Om selvbetjening
 
-På denne delen av dokumentasjonssidene finner du informasjon om hvordan du kan selvbetjene våre fellesløsninger.
+Selvbetjening gjør det mulig å administrere Digdirs fellesløsninger uten manuell behandling fra Digdir.
 
-Per dags dato kan følgende fellesløsninger selvbetjenes:
+Gjennom selvbetjening kan virksomheter blant annet:
+
+- opprette og administrere klienter
+- administrere tilgang til API-er
+- automatisere administrasjon gjennom API
+
+
+## Støttede fellesløsninger
+
+Per i dag kan du selvbetjene følgende fellesløsninger
+
 - ID-porten
+- Ansattporten
 - Maskinporten
-- API-klienter (ID-porten + api)
-- Kontakt- og reservasjonsregisteret
 
-Vi tilbyr i dag 2 grensesnitt for selvbetjening.
 
-1. Selvbetjening gjennom grafisk grensesnitt på Samarbeidsportalen.
-  - Enkelt å komme i gang
-  - Tilgangsstyres via Altinn
-  - Klienter kan opprettes med få tastetrykk
-  - Autentisering med samme bruker som Samarbeidsportalen.
+## Grensesnitt for selvbetjening
 
-2. Selvbetjening via maskinelt API.
-  - Klient med tilgang må utstedes av Digdir (servicedesk@digdir.no)
-  - Bruker virksomhetssertifikat som autentisering
-  - Muliggjør automatisering av f.eks tilgangsstyring av API'er i Maskinporten for   API-tilbydere.
-  - Kan brukes som grunnlag til å bygge opp et eget grafisk grensesnitt for selvbetjening.
+Vi tilbyr to grensesnitt for selvbetjening. Et via grafisk grensesnitt på Samarbeidsportalen, i tillegg til et API.
 
-Selvbetjeningen er tilgjengelig i 3 av våre miljøer.
+### Samarbeidsportalen
 
-PROD: Produksjonsmiljøet
-VER1: Produksjonslikt testmiljø
-VER2: Utviklingsmiljø som kjører pre-releaser av kommende versjoner
+Selvbetjening gjennom grafisk grensesnitt i Samarbeidsportalen.
 
----
+Dette passer for virksomheter som ønsker enkel administrasjon gjennom nettleser.
 
-Forutsetninger for å ta i bruk selvbetjening er at din virksomhet er registrert hos oss, og at bruksvilkår er signert.
+Funksjonalitet:
+- enkel opprettelse og administrasjon av klienter
+- autentisering med vanlig brukerinnlogging
+- tilgangsstyring via Altinn
+- administrasjon uten behov for integrasjon eller API-kall
+
+### Selvbetjening gjennom API for automatisering og integrasjon.
+
+Dette passer for virksomheter som ønsker å automatisere administrasjon eller bygge egne løsninger.
+
+Funksjonalitet:
+
+- automatisering av administrasjon og tilgangsstyring
+- integrasjon med interne systemer
+- grunnlag for egne selvbetjeningsgrensesnitt
+- administrasjon av Maskinporten-API-er programmatisk
+
+For å bruke API-et må virksomheten få utstedt nødvendig klient fra Digdir.
+
+Autentisering skjer med virksomhetssertifikat.
+
+## Miljøer
+
+Selvbetjening er tilgjengelig i både test- og produksjonsmiljø.
+
+| Miljø | URL |
+| --- | --- |
+| Test | [selvbetjening.test.samarbeid.digdir.no](https://selvbetjening.test.samarbeid.digdir.no) |
+| PROD | [selvbetjening.samarbeid.digdir.no](https://selvbetjening.samarbeid.digdir.no) |
+
+
+## Forutsetninger
+
+For å ta i bruk selvbetjening må:
+
+virksomheten være registrert hos Digdir
+nødvendige bruksvilkår være signert
+brukeren ha nødvendige roller og tilganger
