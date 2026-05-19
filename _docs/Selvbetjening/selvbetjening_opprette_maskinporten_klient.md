@@ -30,17 +30,20 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
 | Test | [selvbetjening.test.samarbeid.digdir.no](https://selvbetjening.test.samarbeid.digdir.no) |
 | PROD | [selvbetjening.samarbeid.digdir.no](https://selvbetjening.samarbeid.digdir.no) |
 
-## Opprette klient
+<h2 id="opprette-klient">Opprette klient</h2>
 
-1. Etter innlogging, gå til 'Klienter'
-2. Trykk på "Legg til klient"
-3. Velg "Maskinporten"
+<ol>
+  <li>Etter innlogging, gå til <code>Klienter</code></li>
+  <li>Trykk på <code>Legg til klient</code></li>
+  <li>Velg <code>Maskinporten</code></li>
+</ol>
 
 <p align="center">
   <img
     src="{{site.baseurl}}/assets/knapp_maskinporten.png"
-    width="700"
     style="
+      width:100%;
+      max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
     "
@@ -49,24 +52,36 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
   <em>Velg "Maskinporten"</em>
 </p>
 
-4. Fyll ut påkrevde felter. (Se [feltforklaring](#feltforklaring---maskinporten) for forklaring)
+<ol start="4">
+  <li>
+    Fyll ut påkrevde felter.
+    (Se <a href="#feltforklaring---maskinporten">feltforklaring</a>)
+  </li>
+</ol>
 
 <p align="center">
-  <img src="{{site.baseurl}}/assets/skjema_maskinporten.png"
-    width="700"
+  <img
+    src="{{site.baseurl}}/assets/skjema_maskinporten.png"
     style="
+      width:100%;
+      max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
     "
   >
   <br>
-  <em>"Fyll ut detaljer"</em>
+  <em>Fyll ut klientdetaljer</em>
 </p>
 
-5. Trykk på "Legg til scope"
-6. Søk opp og legg til de scopene du vil benytte og trykk på "Fullfør". (Finner du ikke scopet? Se [Ofte stilte spørsmål](#ofte-stilte-sporsmal))
-7. Trykk på "Lagre endringer" for å lagre klienten.
-8. Klienten er nå opprettet
+<ol start="5">
+  <li>Trykk på <code>Legg til scope</code></li>
+  <li>
+    Søk opp og legg til de scopene du vil benytte og trykk på
+    <code>Fullfør</code>.
+  </li>
+  <li>Trykk på <code>Lagre endringer</code> for å lagre klienten.</li>
+  <li>Klienten er nå opprettet.</li>
+</ol>
 
 ## Registrere nøkkel eller sertifikat på klient
 
