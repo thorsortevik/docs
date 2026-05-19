@@ -15,14 +15,17 @@ folders:
 - title: Brukerveiledninger
   folderitems:
 
-      - title: Opprette klient
-        jurl: docs/Selvbetjening/selvbetjening_opprette_klient.html
+      - title: Opprette ID-porten/Ansattporten-klient
+        jurl: docs/Selvbetjening/selvbetjening_opprette_idp_klient.html
 
-      - title: Administrere klient
-        jurl: docs/Selvbetjening/selvbetjening_administrere_klient.html
+      - title: Opprette Maskinporten-klient
+        jurl: docs/Selvbetjening/selvbetjening_opprette_maskinporten_klient.html
 
-      - title: Administrere API og scopes
-        jurl: docs/Selvbetjening/selvbetjening_api.html
+      - title: Opprette scope
+        jurl: docs/Selvbetjening/selvbetjening_opprette_scope.html
+
+      - title: Gi tilgang til scope
+        jurl: docs/Selvbetjening/selvbetjening_scope_tilgang.html
 
 
 - title: API
