@@ -46,11 +46,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    "
-  >
-  <br>
-  <em>Velg "Maskinporten"</em>
-</p>
+    ">
 
 <ol start="4">
   <li>
@@ -67,11 +63,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    "
-  >
-  <br>
-  <em>Fyll ut klientdetaljer</em>
-</p>
+    ">
 
 <ol start="5">
   <li>Trykk på <code>Legg til scope</code></li>
@@ -89,11 +81,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    "
-  >
-  <br>
-  <em>Fyll ut klientdetaljer</em>
-</p>
+    ">
 
 <ol start="6">
   <li>Trykk på <code>Lagre endringer</code> for å lagre klienten.</li>
@@ -119,7 +107,26 @@ For klienter som kun skal kunne autentiseres med bestemte nøkler eller sertifik
 1. Få eksportert ut den offentlige nøkkelen av virksomhetssertifikatet i PEM-format
 2. Gå til inn på ønsket klient og fanen 'Nøkler'
 3. Trykk på '+ Legg til'
+
+<img
+  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler.png"
+  style="
+    width:100%;
+    max-width:700px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+  ">
+
 4. Lim inn PEM-formatert sertifikat og trykk 'Lagre'
+
+<img
+  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler_pem.png"
+  style="
+    width:100%;
+    max-width:700px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+  ">
 
 Eksempel på gyldig PEM av en offentlig del av et virksomhetssertifikat.
 
@@ -143,7 +150,26 @@ IFmh486x6nBuVKxTqA3PzRwWDQ0PT+pbNGUPCli+KJpnAgMBAAE=
 1. Offentlig nøkkel, i PEM-format, må konverteres til JWK ved hjelp av JWK Creator eller lignende, før den kan bli lagt på klienten.
 2. Gå til inn på ønsket klient og fanen 'Nøkler'
 3. Trykk på '+ Legg til'
+
+<img
+  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler.png"
+  style="
+    width:100%;
+    max-width:700px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+  ">
+
 4. Lim inn JWK og trykk på 'Lagre'.
+
+<img
+  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler_jwk.png"
+  style="
+    width:100%;
+    max-width:700px;
+    border:1px solid #dcdcdc;
+    border-radius:8px;
+  ">
 
 Eksempel på gyldig JWK:
 
