@@ -38,7 +38,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
   <li>Velg <code>Maskinporten</code></li>
 </ol>
 
-<p align="center">
+<p align="left">
   <img
     src="{{site.baseurl}}/assets/knapp_maskinporten.png"
     style="
@@ -59,7 +59,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
   </li>
 </ol>
 
-<p align="center">
+<p align="left">
   <img
     src="{{site.baseurl}}/assets/skjema_maskinporten.png"
     style="
@@ -79,6 +79,23 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
     Søk opp og legg til de scopene du vil benytte og trykk på
     <code>Fullfør</code>.
   </li>
+</ol>
+
+<p align="left">
+  <img
+    src="{{site.baseurl}}/assets/selvbetjening_legg_til_scope.png"
+    style="
+      width:100%;
+      max-width:700px;
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    "
+  >
+  <br>
+  <em>Fyll ut klientdetaljer</em>
+</p>
+
+<ol start="6">
   <li>Trykk på <code>Lagre endringer</code> for å lagre klienten.</li>
   <li>Klienten er nå opprettet.</li>
 </ol>
