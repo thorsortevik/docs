@@ -32,11 +32,9 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
 
 ## Opprette klient
 
-<ol>
-  <li>Etter innlogging, gå til <code>Klienter</code></li>
-  <li>Trykk på <code>Legg til klient</code></li>
-  <li>Velg <code>Maskinporten</code></li>
-</ol>
+1. Etter innlogging, gå til `Klienter`
+2. Trykk på `Legg til klient`
+3. Velg `Maskinporten`
 
 <p align="left">
   <img
@@ -46,14 +44,15 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Velg <code>Maskinporten</code></em>
+</p>
 
-<ol start="4">
-  <li>
-    Fyll ut påkrevde felter.
-    (Se <a href="#feltforklaring---maskinporten">feltforklaring</a>)
-  </li>
-</ol>
+4\. Fyll ut påkrevde felter.
+
+(Se [feltforklaring](#feltforklaring---maskinporten) for forklaring)
 
 <p align="left">
   <img
@@ -63,15 +62,17 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Fyll ut klientdetaljer</em>
+</p>
 
-<ol start="5">
-  <li>Trykk på <code>Legg til scope</code></li>
-  <li>
-    Søk opp og legg til de scopene du vil benytte og trykk på
-    <code>Fullfør</code>.
-  </li>
-</ol>
+5\. Trykk på `Legg til scope`
+
+6\. Søk opp og legg til de scopene du vil benytte, og trykk på `Fullfør`.
+
+(Finner du ikke scopet? Se [Ofte stilte spørsmål](#ofte-stilte-sporsmal))
 
 <p align="left">
   <img
@@ -81,16 +82,20 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Legg til scopes på klienten</em>
+</p>
 
-<ol start="6">
-  <li>Trykk på <code>Lagre endringer</code> for å lagre klienten.</li>
-  <li>Klienten er nå opprettet.</li>
-</ol>
+7\. Trykk på `Lagre endringer` for å lagre klienten.
+
+8\. Klienten er nå opprettet.
 
 ## Registrere nøkkel eller sertifikat på klient
 
 Maskinporten støtter autentisering med:
+
 - virksomhetssertifikat via `x5c`
 - registrert nøkkel via `kid`
 
@@ -104,11 +109,9 @@ For klienter som kun skal kunne autentiseres med bestemte nøkler eller sertifik
 
 ### Eksempel på offentlig del av virksomhetssertifikat
 
-<ol>
-  <li>Få eksportert ut den offentlige nøkkelen av virksomhetssertifikatet i PEM-format</li>
-  <li>Gå til inn på ønsket klient og fanen<code>Nøkler</code></li>
-  <li>Trykk på<code>+ Legg til</code></li>
-</ol>
+1. Få eksportert ut den offentlige nøkkelen av virksomhetssertifikatet i PEM-format
+2. Gå til ønsket klient og fanen `Nøkler`
+3. Trykk på `+ Legg til`
 
 <p align="left">
   <img
@@ -118,10 +121,13 @@ For klienter som kun skal kunne autentiseres med bestemte nøkler eller sertifik
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Legg til ny nøkkel på klienten</em>
+</p>
 
-<ol start="4">
-  <li>Lim inn PEM-formatert sertifikat og trykk<code>Lagre</code></li>
+4\. Lim inn PEM-formatert sertifikat og trykk på `Lagre`
 
 <p align="left">
   <img
@@ -131,11 +137,15 @@ For klienter som kun skal kunne autentiseres med bestemte nøkler eller sertifik
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Registrering av PEM-formatert sertifikat</em>
+</p>
 
-Eksempel på gyldig PEM av en offentlig del av et virksomhetssertifikat.
+Eksempel på gyldig PEM av en offentlig del av et virksomhetssertifikat:
 
-```
+```pem
 -----BEGIN PUBLIC KEY-----
 MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAwGAGTEkkeWVac30+/Z2z
 k/5pgFQzvmudPg225dqq8zijQEZ2A+C3CjGm3+HgOaJ71F3LMirPvG0/lw5Y/WqJ
@@ -147,16 +157,13 @@ lSdJsz10Zn9+S01vn57IpxniePuuON6c/G8dslgelPTkGbtZYeVs7rEAIB02jNbF
 bxM6lTwklGgcU8rv2r/BPSzsd6YdJ8ZC1gLHLz7gS9unSQMUEfgQxg/H4trpedkX
 IFmh486x6nBuVKxTqA3PzRwWDQ0PT+pbNGUPCli+KJpnAgMBAAE=
 -----END PUBLIC KEY-----
-
 ```
 
 ### Eksempel på å registrere nøkkel
 
-<ol>
-  <li>Offentlig nøkkel, i PEM-format, må konverteres til JWK ved hjelp av JWK Creator eller lignende, før den kan bli lagt på klienten.</li>
-  <li>Gå til inn på ønsket klient og fanen<code>Nøkler</code></li>
-  <li>Trykk på<code>+ Legg til</code></li>
-</ol>
+1. Offentlig nøkkel i PEM-format må konverteres til JWK ved hjelp av JWK Creator eller lignende før den kan registreres på klienten.
+2. Gå til ønsket klient og fanen `Nøkler`
+3. Trykk på `+ Legg til`
 
 <p align="left">
   <img
@@ -166,10 +173,13 @@ IFmh486x6nBuVKxTqA3PzRwWDQ0PT+pbNGUPCli+KJpnAgMBAAE=
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Legg til ny nøkkel på klienten</em>
+</p>
 
-<ol start="4">
-  <li>Lim inn JWK og trykk på<code>Lagre</code></li>
+4\. Lim inn JWK og trykk på `Lagre`
 
 <p align="left">
   <img
@@ -179,20 +189,23 @@ IFmh486x6nBuVKxTqA3PzRwWDQ0PT+pbNGUPCli+KJpnAgMBAAE=
       max-width:700px;
       border:1px solid #dcdcdc;
       border-radius:8px;
-    ">
+    "
+  />
+  <br>
+  <em>Registrering av JWK</em>
+</p>
 
 Eksempel på gyldig JWK:
 
-```
-    {
-      "kty": "RSA",
-      "e": "AQAB",
-      "use": "sig",
-      "kid": "min_egen_nokkel",
-      "alg": "RS256",
-      "n": "lGc-dGnl9l9pCSb6eW5Mf23Aiss09q7Mxre9q9dazSiN9IjQJmkWDySpoYW3g_rSX2a74cg_q3iTSM0Co9iJ0LQp8gjoIi9I8syi6anBKK6fISr1adZbsGGrM1-zMRRNVsJ811snTdkbgx8ZxVRJM4F6D2KwL3TEnv0CRRVtphO0sRmimKBVVBdawPYQC64SQDvARy6xIlPhD-Da2n2Cl6vRQbVns7dYD8-C2TeYGgB_tAsrVSorx9GF5cZ-hlNHfIgg2qQYZzaljyfOWPPG5rybp9bAWg9vFllUFd_Y6vvZ0tqVfAyj67nFz_w4Rxy-MdRgERKHJcq81GkmVzq5fQ"
-    }
-
+```json
+{
+  "kty": "RSA",
+  "e": "AQAB",
+  "use": "sig",
+  "kid": "min_egen_nokkel",
+  "alg": "RS256",
+  "n": "lGc-dGnl9l9pCSb6eW5Mf23Aiss09q7Mxre9q9dazSiN9IjQJmkWDySpoYW3g_rSX2a74cg_q3iTSM0Co9iJ0LQp8gjoIi9I8syi6anBKK6fISr1adZbsGGrM1-zMRRNVsJ811snTdkbgx8ZxVRJM4F6D2KwL3TEnv0CRRVtphO0sRmimKBVVBdawPYQC64SQDvARy6xIlPhD-Da2n2Cl6vRQbVns7dYD8-C2TeYGgB_tAsrVSorx9GF5cZ-hlNHfIgg2qQYZzaljyfOWPPG5rybp9bAWg9vFllUFd_Y6vvZ0tqVfAyj67nFz_w4Rxy-MdRgERKHJcq81GkmVzq5fQ"
+}
 ```
 
 ## Legge til scope
