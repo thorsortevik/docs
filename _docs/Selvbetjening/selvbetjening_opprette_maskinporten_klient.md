@@ -32,10 +32,24 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
 
 ## Opprette klient
 
-1. Etter innlogging, gå til "Klienter"
+1. Etter innlogging, gå til 'Klienter'
 2. Trykk på "Legg til klient"
 3. Velg "Maskinporten"
-4. Fyll ut påkrevde felter. (Se [feltforklaring](#internlenke) for forklaring)
+
+<p align="center">
+  <img
+    src="/assets/knapp_maskinporten.png"
+    width="700"
+    style="
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    "
+  >
+  <br>
+  <em>Velg "Maskinporten"</em>
+</p>
+
+4. Fyll ut påkrevde felter. (Se [feltforklaring](#feltforklaring---maskinporten) for forklaring)
 5. Trykk på "Legg til scope"
 6. Søk opp og legg til de scopene du vil benytte og trykk på "Fullfør". (Finner du ikke scopet? Se [Ofte stilte spørsmål](#ofte-stilte-sporsmal))
 7. Trykk på "Lagre endringer" for å lagre klienten.
@@ -49,7 +63,7 @@ Maskinporten støtter autentisering med:
 
 Les mer om dette i dokumentasjonen for [JWT grant](https://docs.digdir.no/docs/Maskinporten/maskinporten_protocol_jwtgrant.html#grant-structure).
 
-For klienter som skal begrenses til bestemte nøkler eller sertifikater, kan dette administreres under fanen `Nøkler`.
+For klienter som kun skal kunne autentiseres med bestemte nøkler eller sertifikater, kan dette administreres under fanen `Nøkler`.
 
 > NB! Nøkler registrert fra virksomhetssertifikat har maksimal levetid på 1 år, selv om sertifikatet har lengre gyldighetstid.
 >
@@ -57,11 +71,52 @@ For klienter som skal begrenses til bestemte nøkler eller sertifikater, kan det
 
 ### Eksempel på offentlig del av virksomhetssertifikat
 
-### Eksempel på offentlig nøkkel
+1. Få eksportert ut den offentlige nøkkelen av virksomhetssertifikatet i PEM-format
+2. Gå til inn på ønsket klient og fanen 'Nøkler'
+3. Trykk på '+ Legg til'
+4. Lim inn PEM-formatert sertifikat og trykk 'Lagre'
+
+Eksempel på gyldig PEM av en offentlig del av et virksomhetssertifikat.
+
+```
+-----BEGIN PUBLIC KEY-----
+MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAwGAGTEkkeWVac30+/Z2z
+k/5pgFQzvmudPg225dqq8zijQEZ2A+C3CjGm3+HgOaJ71F3LMirPvG0/lw5Y/WqJ
+XGBTrbdUju2Syt4poxSdUzf+3mVKhFXSWHBex7+4gKn7ybWKWaJpSNgse+CDhG3H
+c1c/kFoE8W9M9lOsa75ZX+n55Pga7+lkiANg/9ZqdkQARBdnPmwUB5o7rfQfUYeq
+PckFGS7qSedNTuptTI34KMItIdWGb2KIJ56RvERfkXnXwt+u0KdcWsKwbbH1X3Kw
+lSdJsz10Zn9+S01vn57IpxniePuuON6c/G8dslgelPTkGbtZYeVs7rEAIB02jNbF
+751KEQXGE21X7ni34KJPr9V3M8F7+6rwjP/S0noml5MJu0lZjvE3M4VKbSyrsOS5
+bxM6lTwklGgcU8rv2r/BPSzsd6YdJ8ZC1gLHLz7gS9unSQMUEfgQxg/H4trpedkX
+IFmh486x6nBuVKxTqA3PzRwWDQ0PT+pbNGUPCli+KJpnAgMBAAE=
+-----END PUBLIC KEY-----
+
+```
+
+### Eksempel på å registrere nøkkel
+
+1. Offentlig nøkkel, i PEM-format, må konverteres til JWK ved hjelp av JWK Creator eller lignende, før den kan bli lagt på klienten.
+2. Gå til inn på ønsket klient og fanen 'Nøkler'
+3. Trykk på '+ Legg til'
+4. Lim inn JWK og trykk på 'Lagre'.
+
+Eksempel på gyldig JWK:
+
+```
+    {
+      "kty": "RSA",
+      "e": "AQAB",
+      "use": "sig",
+      "kid": "min_egen_nokkel",
+      "alg": "RS256",
+      "n": "lGc-dGnl9l9pCSb6eW5Mf23Aiss09q7Mxre9q9dazSiN9IjQJmkWDySpoYW3g_rSX2a74cg_q3iTSM0Co9iJ0LQp8gjoIi9I8syi6anBKK6fISr1adZbsGGrM1-zMRRNVsJ811snTdkbgx8ZxVRJM4F6D2KwL3TEnv0CRRVtphO0sRmimKBVVBdawPYQC64SQDvARy6xIlPhD-Da2n2Cl6vRQbVns7dYD8-C2TeYGgB_tAsrVSorx9GF5cZ-hlNHfIgg2qQYZzaljyfOWPPG5rybp9bAWg9vFllUFd_Y6vvZ0tqVfAyj67nFz_w4Rxy-MdRgERKHJcq81GkmVzq5fQ"
+    }
+
+```
 
 ## Legge til scope
 
-Man kan legge til scope i registreringsflyten eller i etterkant. For å legge til et scope på en eksisterende klient, gå til fanen 'Scopes' og trykk på "+ Legg til".
+Scopes kan legges til både under opprettelse av klienten og i etterkant. For å legge til et scope på en eksisterende klient, gå til fanen 'Scopes' og trykk på '+ Legg til'.
 
 ## Fjerne scope fra klient
 
