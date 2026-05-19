@@ -38,7 +38,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
 
 <p align="center">
   <img
-    src="/assets/knapp_maskinporten.png"
+    src="{{site.baseurl}}/assets/knapp_maskinporten.png"
     width="700"
     style="
       border:1px solid #dcdcdc;
@@ -50,6 +50,19 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
 </p>
 
 4. Fyll ut påkrevde felter. (Se [feltforklaring](#feltforklaring---maskinporten) for forklaring)
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/skjema_maskinporten.png"
+    width="700"
+    style="
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    "
+  >
+  <br>
+  <em>"Fyll ut detaljer"</em>
+</p>
+
 5. Trykk på "Legg til scope"
 6. Søk opp og legg til de scopene du vil benytte og trykk på "Fullfør". (Finner du ikke scopet? Se [Ofte stilte spørsmål](#ofte-stilte-sporsmal))
 7. Trykk på "Lagre endringer" for å lagre klienten.
