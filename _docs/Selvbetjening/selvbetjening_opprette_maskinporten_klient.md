@@ -30,7 +30,7 @@ Selvbetjeningen er delt inn i flere miljøer, på samme måte som ID-porten, Ans
 | Test | [selvbetjening.test.samarbeid.digdir.no](https://selvbetjening.test.samarbeid.digdir.no) |
 | PROD | [selvbetjening.samarbeid.digdir.no](https://selvbetjening.samarbeid.digdir.no) |
 
-<h2 id="opprette-klient">Opprette klient</h2>
+## Opprette klient
 
 <ol>
   <li>Etter innlogging, gå til <code>Klienter</code></li>
