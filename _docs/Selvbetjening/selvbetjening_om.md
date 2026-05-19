@@ -2,10 +2,12 @@
 title: Om selvbetjening av Digdirs fellesløsninger
 description:  Selvbetjening av Digdirs fellesløsninger
 
-sidebar: main_sidebar
+sidebar: selvbetjening_sidebar
 product: Selvbetjening
 redirect_from: /selvbetjening_om
 ---
+Denne siden gir en liten innføring i hva man kan gjøre og hvordan man kan få tilgang til selvbetjening via Samarbeidsportalen.
+
 * TOC
 {:toc}
 
@@ -69,3 +71,12 @@ Selvbetjening er tilgjengelig i både test- og produksjonsmiljø.
 | --- | --- |
 | Test | [selvbetjening.test.samarbeid.digdir.no](https://selvbetjening.test.samarbeid.digdir.no) |
 | PROD | [selvbetjening.samarbeid.digdir.no](https://selvbetjening.samarbeid.digdir.no) |
+
+## Andre selvbetjeningsløsninger fra Digdir
+
+| Hva | URL | Beskrivelse |
+| --- | --- | --- |
+| Altinn studio | [https://altinn.studio](https://altinn.studio) | Verktøy for utvikling av digitale tjenester |
+| Felles datakatalog publisering | [https://data.norge.no/publishing](https://data.norge.no/publishing) | Tjeneste for å publisere blant annet datasett, API og begreper |
+| Tilgjengelighetserklæring | [https://uustatus.no/](https://uustatus.no/) | Portal der man kan opprette og administrere Tilgjengelighetserklæring |
+| Data.altinn.no | [https://data.altinn.no](https://data.altinn.no) | Løsning for datadeling |
