@@ -104,29 +104,34 @@ For klienter som kun skal kunne autentiseres med bestemte nøkler eller sertifik
 
 ### Eksempel på offentlig del av virksomhetssertifikat
 
-1. Få eksportert ut den offentlige nøkkelen av virksomhetssertifikatet i PEM-format
-2. Gå til inn på ønsket klient og fanen 'Nøkler'
-3. Trykk på '+ Legg til'
+<ol>
+  <li>Få eksportert ut den offentlige nøkkelen av virksomhetssertifikatet i PEM-format</li>
+  <li>Gå til inn på ønsket klient og fanen<code>Nøkler</code></li>
+  <li>Trykk på<code>+ Legg til</code></li>
+</ol>
 
-<img
-  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler.png"
-  style="
-    width:100%;
-    max-width:700px;
-    border:1px solid #dcdcdc;
-    border-radius:8px;
-  ">
+<p align="left">
+  <img
+    src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler.png"
+    style="
+      width:100%;
+      max-width:700px;
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    ">
 
-4. Lim inn PEM-formatert sertifikat og trykk 'Lagre'
+<ol start="4">
+  <li>Lim inn PEM-formatert sertifikat og trykk<code>Lagre</code></li>
 
-<img
-  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler_pem.png"
-  style="
-    width:100%;
-    max-width:700px;
-    border:1px solid #dcdcdc;
-    border-radius:8px;
-  ">
+<p align="left">
+  <img
+    src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler_pem.png"
+    style="
+      width:100%;
+      max-width:700px;
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    ">
 
 Eksempel på gyldig PEM av en offentlig del av et virksomhetssertifikat.
 
@@ -147,29 +152,34 @@ IFmh486x6nBuVKxTqA3PzRwWDQ0PT+pbNGUPCli+KJpnAgMBAAE=
 
 ### Eksempel på å registrere nøkkel
 
-1. Offentlig nøkkel, i PEM-format, må konverteres til JWK ved hjelp av JWK Creator eller lignende, før den kan bli lagt på klienten.
-2. Gå til inn på ønsket klient og fanen 'Nøkler'
-3. Trykk på '+ Legg til'
+<ol>
+  <li>Offentlig nøkkel, i PEM-format, må konverteres til JWK ved hjelp av JWK Creator eller lignende, før den kan bli lagt på klienten.</li>
+  <li>Gå til inn på ønsket klient og fanen<code>Nøkler</code></li>
+  <li>Trykk på<code>+ Legg til</code></li>
+</ol>
 
-<img
-  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler.png"
-  style="
-    width:100%;
-    max-width:700px;
-    border:1px solid #dcdcdc;
-    border-radius:8px;
-  ">
+<p align="left">
+  <img
+    src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler.png"
+    style="
+      width:100%;
+      max-width:700px;
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    ">
 
-4. Lim inn JWK og trykk på 'Lagre'.
+<ol start="4">
+  <li>Lim inn JWK og trykk på<code>Lagre</code></li>
 
-<img
-  src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler_jwk.png"
-  style="
-    width:100%;
-    max-width:700px;
-    border:1px solid #dcdcdc;
-    border-radius:8px;
-  ">
+<p align="left">
+  <img
+    src="{{site.baseurl}}/assets/selvbetjening_maskinporten_nokler_pem.png"
+    style="
+      width:100%;
+      max-width:700px;
+      border:1px solid #dcdcdc;
+      border-radius:8px;
+    ">
 
 Eksempel på gyldig JWK:
 
